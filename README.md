@@ -11,7 +11,7 @@ The following Repo contains Gazebo Simulations of IITB Mars Rover Team.
 ```bash
  mkdir -p rover_ws/src
  cd rover_ws/src
- git clone https://github.com/iitbmartian/GUI_MSI_2016 CHANGE
+ git clone https://github.com/iitbmartian/Gazebo_simulation.git
  cd ..
  catkin_make
 
