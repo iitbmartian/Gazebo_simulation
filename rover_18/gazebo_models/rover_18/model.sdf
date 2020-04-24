@@ -1,0 +1,408 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="robot_18">
+    <self_collide>true</self_collide>
+
+    <!--links defined below-->
+    <link name="base_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+<!--         <mesh><uri>model://rover_18/meshes/base_link.stl</uri></mesh> -->
+        <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/base_link.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+<!--           <mesh><uri>model://rover_18/meshes/base_link.stl</uri></mesh> -->
+          <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/base_link.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+<!--     <link name="kinect">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box><size>0.2 0.05 0.05</size></box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box><size>0.2 0.05 0.05</size></box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link> -->
+
+    <link name="wheel1">
+      <pose>0.46 0.43 -0.13 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+<!--         <mesh><uri>model://rover_18/meshes/wheel1.stl</uri></mesh> -->
+        <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel1.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+<!--           <mesh><uri>model://rover_18/meshes/wheel1.stl</uri></mesh> -->
+          <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel1.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="wheel2">
+      <pose>-0.46 0.44 -0.13 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+<!--         <mesh><uri>model://rover_18/meshes/wheel2.stl</uri></mesh> -->
+        <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel2.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+<!--           <mesh><uri>model://rover_18/meshes/wheel2.stl</uri></mesh> -->
+          <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel2.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="wheel3">
+      <pose>0.46 -0.45 -0.13 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+<!--         <mesh><uri>model://rover_18/meshes/wheel3.stl</uri></mesh> -->
+        <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel3.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+<!--           <mesh><uri>model://rover_18/meshes/wheel3.stl</uri></mesh> -->
+          <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel3.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="wheel4">
+      <pose>-0.46 -0.44 -0.13 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+<!--         <mesh><uri>model://rover_18/meshes/wheel4.stl</uri></mesh> -->
+        <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel4.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+<!--           <mesh><uri>model://rover_18/meshes/wheel4.stl</uri></mesh> -->
+          <mesh><uri>/home/swapnil/rover_ws/src/rover_18/gazebo_models/rover_18/meshes/wheel4.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+<!--    
+
+    <link name="base_rotation">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+        <mesh><uri>model://rover_18/meshes/base_rotation.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://rover_18/meshes/base_rotation.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="shoulder_link">
+      <pose>0 0.23 0.14 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+        <mesh><uri>model://rover_18/meshes/shoulder.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://rover_18/meshes/shoulder.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="elbow_link">
+      <pose>0 0.13 -0.13 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+        <mesh><uri>model://rover_18/meshes/elbow.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://rover_18/meshes/elbow.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="gripper">
+      <pose>0.005 0.02 -0.18 0 0 0</pose>
+      <inertial>
+        <mass>2.7918</mass>
+        <inertia>
+          <ixx>0.095684</ixx>
+          <iyy>0.058185</iyy>
+          <izz>0.14455</izz>
+          <ixy>0.001902</ixy>
+          <ixz>-0.00027184</ixz>
+          <iyz>0.00031126</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+      <geometry>
+        <mesh><uri>model://rover_18/meshes/gripper.stl</uri></mesh>
+      </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://rover_18/meshes/gripper.stl</uri></mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+        </material>
+      </visual>
+    </link> -->
+
+    <!--Joint definiton below-->
+<!--     <joint name="kinect_joint" type="fixed">
+      <pose>0 0.35 0.12 -1.5 0 0</pose>
+      <parent>base_link</parent>
+      <child>kinect</child>
+    </joint> -->
+
+    <joint name="wheel1_joint" type="revolute">
+      <pose>0 0 0 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>wheel1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+      </axis>
+      <physics>
+        <provide_feedback>true</provide_feedback>
+      </physics>
+    </joint>
+
+    <joint name="wheel2_joint" type="revolute">
+      <pose>0 0 0 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>wheel2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+      </axis>
+      <physics>
+        <provide_feedback>true</provide_feedback>
+      </physics>
+    </joint>
+
+    <joint name="wheel3_joint" type="revolute">
+      <pose>0 0 0 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>wheel3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+      </axis>
+      <physics>
+        <provide_feedback>true</provide_feedback>
+      </physics>
+    </joint>
+
+    <joint name="wheel4_joint" type="revolute">
+      <pose>0 0 0 0 0 0</pose>
+      <parent>base_link</parent>
+      <child>wheel4</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+      </axis>
+      <physics>
+        <provide_feedback>true</provide_feedback>
+      </physics>
+    </joint>
+
+    <plugin name="wheel1_sensor" filename="libgazebo_ros_ft_sensor.so">
+        <updateRate>1.0</updateRate>
+        <topicName>wheel1_ft</topicName>
+        <jointName>wheel1_joint</jointName>
+    </plugin>
+
+        <plugin name="wheel1_sensor" filename="libgazebo_ros_ft_sensor.so">
+        <updateRate>1.0</updateRate>
+        <topicName>wheel2_ft</topicName>
+        <jointName>wheel2_joint</jointName>
+    </plugin>
+
+        <plugin name="wheel1_sensor" filename="libgazebo_ros_ft_sensor.so">
+        <updateRate>1.0</updateRate>
+        <topicName>wheel3_ft</topicName>
+        <jointName>wheel3_joint</jointName>
+    </plugin>
+
+    <plugin name="wheel1_sensor" filename="libgazebo_ros_ft_sensor.so">
+        <updateRate>1.0</updateRate>
+        <topicName>wheel4_ft</topicName>
+        <jointName>wheel4_joint</jointName>
+    </plugin>
+  </model>
+</sdf>
